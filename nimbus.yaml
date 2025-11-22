@@ -1,0 +1,24 @@
+environments:
+  default:
+    host: iceitapps.com
+    ssh:
+      port: 22
+      user: nebulom
+      ssh_key: ~/.ssh/id_rsa
+    apps:
+      default:
+        name: baliwtaph.iceitapps.com
+        subdomain: baliwtaph.iceitapps.com
+        github: github.com/iescarro/baliwtaph.git
+        branch: main
+        tasks:
+          - cd domains/iceitapps.com/baliwtaph
+          - git pull origin main
+          # - rm composer.lock
+          - composer install
+          - php public/index.php migrate
+    databases:
+      default:
+        user: baliwtaph
+        password: baliwtaph
+        name: Start123!!!

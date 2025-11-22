@@ -5,7 +5,10 @@
   "homepage": "https://github.com/iescarro/codeigniter3",
   "license": "MIT",
   "require": {
-    "iescarro/codeigniter3-framework": "^0.1"
+    "iescarro/codeigniter3-framework": "^0.1",
+    "iescarro/blog": "^0.1",
+    "iescarro/codeigniter3-auth": "^0.0.16",
+    "erusev/parsedown": "^1.7"
   },
   "autoload": {
     "psr-4": {
